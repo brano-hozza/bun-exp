@@ -1,8 +1,7 @@
 {
+  "version": "1.0.4",
   "name": "bun-experiment",
-  "version": "0.0.3",
-  "module": "src/index.js",
-  "devDependencies": {
-    "bun-types": "latest"
+  "dependencies": {
+    "@kapsonfire/bun-bakery": "^0.2.0"
   }
 }
