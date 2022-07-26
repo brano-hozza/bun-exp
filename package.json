@@ -1,8 +1,25 @@
 {
   "version": "1.0.4",
   "name": "bun-experiment",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "start": "bun src/index.ts"
+  },
   "dependencies": {
-    "@kapsonfire/bun-bakery": "^0.2.0",
-    "bun-types": "^0.1.4"
+    "@kapsonfire/bun-bakery": "^0.2.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "bun-types": "^0.1.4",
+    "eslint": "^8.20.0",
+    "prettier": "^2.7.1",
+    "husky": "^8.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   }
 }

@@ -3,5 +3,7 @@
     "types": ["bun-types"],
     "module": "esnext",
     "moduleResolution": "Node"
-  }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
